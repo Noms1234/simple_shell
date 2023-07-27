@@ -53,7 +53,7 @@ int _unsetenv(info_t *info, char *var)
  * @info: pointer to struct
  * @var: the string env var property
  * @value: string with value
- *  Return: 0
+ * Return: 0
  */
 int _setenv(info_t *info, char *var, char *value)
 {
@@ -86,5 +86,5 @@ int _setenv(info_t *info, char *var, char *value)
 	add_node_end(&(info->env), buf, 0);
 	free(buf);
 	info->env_changed = 1;
-	return (0);
-
+	return(0);
+}
